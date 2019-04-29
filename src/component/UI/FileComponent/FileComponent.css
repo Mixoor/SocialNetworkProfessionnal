@@ -1,0 +1,91 @@
+.loader-box{
+    background-color: #fff;
+    border-radius: 4px;
+    border: 2px dashed #8f88882b;
+    margin: 4px;
+    padding: 2px;
+    width: 55px;
+    height: 58px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    cursor: pointer;
+}
+
+.loader-box i:hover{
+    opacity: 1;
+}
+.loader-box i{
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+    opacity: 0.6;
+    margin: 12px;
+}
+
+.loader-box input {
+   display: none;
+ 
+}
+.remove{ 
+    cursor: pointer;
+    position: absolute;
+    right: -5px;
+    bottom: -8px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+}
+.remove:hover{
+    opacity: 1;
+}
+.refresh{
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.loader-input{
+    display: flex;
+    position: relative;
+    width: 90%;
+    min-height: 150px;
+    max-height: 350px;
+    overflow-y:auto;
+    border:1px solid #8f88882b;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+.loader-input:focus{
+    background-color: rebeccapurple;
+}
+.loader-input .img {
+   position: relative;
+    border-radius: 4px;
+    border: 2px dashed #8f88882b;
+    margin: 4px;
+    padding: 2px;
+    max-height: 58px;    
+    display: flex;
+
+}
+.img .preview{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+  
+}
+.loader-inf {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}

@@ -1,0 +1,12 @@
+.error-center{
+  display: block;
+  position: fixed;
+  top: 50%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.error-c * {
+  margin: 12px;
+}
